@@ -1,5 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 @import 'tailwindcss';
 
 @theme {
-    
+    --background-san-francisco: url('../img/sanFrancisco.jpg');
+    --background-san-francisco-desktop: url('../img/sanFranciscoDesktop.jpg');
+    --background-yosemite: url('../img/yosemite.jpg');
+    --background-la: url('../img/LA.jpg');
+    --background-seattle: url('../img/seattle.jpg');
+    --background-new-york: url('../img/new_york.jpg');
+    --background-norway: url('../img/norway.jpg');
+    --background-sydney: url('../img/sydney.jpg');
+    --background-miami: url('../img/miami.jpg');
+    --background-switzerland: url('../img/switzerland.jpg');
+    --background-bali: url('../img/bali.jpg');
+    --background-chicago: url('../img/chicago.jpg');
+    --background-europe: url('../img/europe.jpg');
+    --background-iceland: url('../img/iceland.jpg');
+
+    --color-primary: #CC2D4A;
+    --color-secondary: #8FA206;
+    --color-tertiary: #61AEC9;
+
+    --font-montserrat: "Montserrat", sans-serif;
 }
