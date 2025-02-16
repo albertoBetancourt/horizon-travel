@@ -1,0 +1,20 @@
+{
+  "name": "horizon-travel",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/albertoBetancourt/horizon-travel#readme",
+  "bugs": {
+    "url": "https://github.com/albertoBetancourt/horizon-travel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertoBetancourt/horizon-travel.git"
+  },
+  "license": "MIT",
+  "author": "Carlos Vera <veracar111@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
