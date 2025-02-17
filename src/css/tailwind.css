@@ -23,3 +23,9 @@
 
     --font-montserrat: "Montserrat", sans-serif;
 }
+
+@layer components {
+    .Card {
+        @apply w-48 h-64 shadow-md rounded-lg;
+    }
+}
