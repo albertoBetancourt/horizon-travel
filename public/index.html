@@ -19,7 +19,7 @@
                 <div class="w-full h-3/4">
                     <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
                         <input class="outline-none p-3 rounded-full shadow-sm bg-white" placeholder="San Francisco" type="search" name="" id="">
-                        <button class="w-32 rounded-full text-xl font-semibold text-primary bg-white shadow-sm">
+                        <button class="w-32 py-1 px-2 rounded-full text-xl font-semibold text-primary bg-white shadow-sm hover:bg-gray-200 transition">
                             Explorar
                         </button>
                     </div>
@@ -28,12 +28,43 @@
                     </div>
                 </div>
             </div>
-            <div class="p-10" id="recomendadas">
-                <div class="Card">
-                    <div class="w-full h-3/5 rounded-t-lg bg-(image:--background-norway) bg-cover"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg flex flex-col justify-center items-start gap-2 p-4">
-                        <p class="text-white font-bold text-lg">Norway</p>
-                        <p class="text-white text-sm">Beautiful landscapes</p>
+            <div class="p-6" id="recomendados">
+                <div class="text-3xl font-semibold text-primary">Recomendados</div>
+                <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+                    <div class="Card">
+                        <div class="Card--cover bg-(image:--background-norway)"></div>
+                        <div class="Card--info bg-secondary">
+                            <p class="text-white font-bold text-lg">Norway</p>
+                            <p class="text-white text-sm">Hermosos Paisajes</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="Card--cover bg-(image:--background-new-york)"></div>
+                        <div class="Card--info bg-white">
+                            <p class="text-terciary font-bold text-lg">New York</p>
+                            <p class="text-terciary text-sm">La gran manzana</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="Card--cover bg-(image:--background-yosemite)"></div>
+                        <div class="Card--info bg-secondary">
+                            <p class="text-white font-bold text-lg">Yosemite</p>
+                            <p class="text-white text-sm">Un escape del mundo</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="Card--cover bg-(image:--background-seattle)"></div>
+                        <div class="Card--info bg-secondary">
+                            <p class="text-white font-bold text-lg">Seattle</p>
+                            <p class="text-white text-sm">La ciudad esmeralda</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="Card--cover bg-(image:--background-switzerland)"></div>
+                        <div class="Card--info bg-white">
+                            <p class="text-terciary font-bold text-lg">Switzerland</p>
+                            <p class="text-terciary text-sm">El corazón de los Alpes</p>
+                        </div>
                     </div>
                 </div>
             </div>
