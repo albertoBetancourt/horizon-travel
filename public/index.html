@@ -8,7 +8,7 @@
     <title>Horizon Travel</title>
 </head>
 
-<body>
+<body class="font-montserrat">
     <header>
         <nav></nav>
         <div id="tab_bar"></div>
@@ -18,8 +18,12 @@
             <div id="home">
                 <div class="w-full h-3/4">
                     <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                        <input class="outline-none p-3 rounded-full shadow-sm bg-white" placeholder="San Francisco" type="search" name="" id="">
-                        <button class="w-32 py-1 px-2 rounded-full text-xl font-semibold text-primary bg-white shadow-sm hover:bg-gray-200 transition">
+                        <input class="w-48 outline-none p-3 rounded-full shadow-sm bg-white 
+                        transition-width duration-500 ease-in-out focus:ring-2 focus:w-11/12" 
+                        placeholder="San Francisco" type="search">
+                        <button class="w-36 py-1 px-2 rounded-full text-lg font-semibold text-primary bg-white shadow-sm 
+                        transition-transform transition-colors duration-500 ease-in-out 
+                        hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110">
                             Explorar
                         </button>
                     </div>
@@ -30,7 +34,7 @@
             </div>
             <div class="p-6" id="recomendados">
                 <div class="text-3xl font-semibold text-primary">Recomendados</div>
-                <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+                <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
                     <div class="Card">
                         <div class="Card--cover bg-(image:--background-norway)"></div>
                         <div class="Card--info bg-secondary">
