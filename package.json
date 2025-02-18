@@ -2,7 +2,7 @@
   "name": "horizon-travel",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/albertoBetancourt/horizon-travel#readme",
+  "homepage": "https://albertoBetancourt.github.io/horizon-travel",
   "bugs": {
     "url": "https://github.com/albertoBetancourt/horizon-travel/issues"
   },
@@ -16,10 +16,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "postcss src/css/tailwind.css -o public/css/tailwind.css --watch",
-    "build:css": "postcss src/css/tailwind.css -o public/css/tailwind.css"
+    "build": "postcss src/css/tailwind.css -o public/css/tailwind.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.6",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.2",
     "postcss-cli": "^11.0.0",
     "tailwindcss": "^4.0.6"
