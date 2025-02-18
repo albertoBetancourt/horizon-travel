@@ -2,7 +2,7 @@
 📌 Explora el mundo con estilo  
 
 # 🚀 Aplicación en Vivo  
-💻 **Disponible aquí:** [🔗 Ver Proyecto](#) 
+💻 **Disponible aquí:** [🔗 Ver Proyecto](https://albertobetancourt.github.io/horizon-travel/) 
 
 ## 🌟 Descripción  
 Horizon Travel es una elegante landing page diseñada para inspirar a los viajeros a descubrir destinos impresionantes. Construida con **HTML, Tailwind CSS v4 y JavaScript**, esta página presenta un diseño moderno, animaciones fluidas y un modo oscuro dinámico. 
