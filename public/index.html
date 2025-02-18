@@ -7,34 +7,34 @@
     <link href="./css/tailwind.css" rel="stylesheet">
     <title>Horizon Travel</title>
 </head>
-
-<body class="font-montserrat">
+<body class="font-montserrat dark:bg-gray-900">
     <!-- Header -->
     <header>
-        <nav class="w-full h-14 hidden bg-white p-4 justify-between lg:flex fixed z-10">
+        <nav class="w-full h-14 hidden bg-white p-4 justify-between lg:flex fixed z-10 dark:bg-gray-700">
             <div class="h-auto w-auto">
-                <p class="text-xl text-primary font-black">Horizon Travel</p>
+                <p class="text-xl text-primary font-black dark:text-white">Horizon Travel</p>
             </div>
             <div class=" flex space-x-8">
-                <a class="font-bold text-md text-primary" href="#home">Home</a>
-                <a class="font-bold text-md text-primary" href="#recomendados">Recomendados</a>
-                <a class="font-bold text-md text-primary" href="#rentas_destacadas">Rentas</a>
-                <a class="font-bold text-md text-primary" href="#faqs">FAQs</a>
-                <a class="font-bold text-md text-primary" href="#sobre_nosotros">Sobre Nosotros</a>
+                <a class="font-bold text-md text-primary dark:text-white" href="#home">Home</a>
+                <a class="font-bold text-md text-primary dark:text-white" href="#recomendados">Recomendados</a>
+                <a class="font-bold text-md text-primary dark:text-white" href="#rentas_destacadas">Rentas</a>
+                <a class="font-bold text-md text-primary dark:text-white" href="#faqs">FAQs</a>
+                <a class="font-bold text-md text-primary dark:text-white" href="#sobre_nosotros">Sobre Nosotros</a>
             </div>
             <div class="flex space-x-4">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path fill-rule="evenodd" class="text-primary"
+                    <path fill-rule="evenodd" class="text-primary dark:text-white"
                         d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
                         clip-rule="evenodd" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
-                    <path fill-rule="evenodd" class="text-primary"
+                <svg id="dark-mode-toggle-desktop" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 24 24" class="w-6 h-6 cursor-pointer">
+                    <path fill-rule="evenodd" class="text-primary dark:text-white"
                         d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
                         clip-rule="evenodd" />
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path fill-rule="evenodd" class="text-gray-300"
+                    <path fill-rule="evenodd" class="text-gray-300 dark:text-white"
                         d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
                         clip-rule="evenodd" />
                 </svg>
@@ -55,7 +55,7 @@
                         transition-width duration-500 ease-in-out focus:ring-2 focus:w-11/12 lg:hidden"
                             placeholder="San Francisco" type="search">
                         <div class="hidden h-auto lg:w-2/6 lg:flex pb-6">
-                            <p class="text-4xl text-black font-bold ml-24">Encuentra mas ubicaciones como esta</p>
+                            <p class="text-4xl text-black font-bold ml-24">Encuentra más ubicaciones como esta</p>
                         </div>
                         <button class="w-36 py-1 px-2 rounded-full text-lg font-semibold text-primary bg-white shadow-sm 
                         transition-transform transition-colors duration-500 ease-in-out 
@@ -72,63 +72,63 @@
 
             <!-- Recomendados -->
             <div class="p-6" id="recomendados">
-                <div class="text-3xl font-semibold text-primary lg:text-4xl">Recomendados</div>
+                <div class="text-3xl font-semibold text-primary lg:text-4xl dark:text-white">Recomendados</div>
                 <div
                     class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden lg:h-96 lg:space-x-8">
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-norway)"></div>
-                        <div class="Card--info bg-secondary">
+                        <div class="Card--info bg-secondary dark:bg-gray-700">
                             <p class="text-white font-bold text-lg">Noruega</p>
                             <p class="text-white text-sm">Hermosos Paisajes</p>
                         </div>
                     </div>
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-new-york)"></div>
-                        <div class="Card--info bg-white">
-                            <p class="text-terciary font-bold text-lg">New York</p>
-                            <p class="text-terciary text-sm">La gran manzana</p>
+                        <div class="Card--info bg-white dark:bg-gray-800">
+                            <p class="text-terciary font-bold text-lg dark:text-white">New York</p>
+                            <p class="text-terciary text-sm dark:text-white">La gran manzana</p>
                         </div>
                     </div>
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-yosemite)"></div>
-                        <div class="Card--info bg-secondary">
+                        <div class="Card--info bg-secondary dark:bg-gray-700">
                             <p class="text-white font-bold text-lg">Yosemite</p>
                             <p class="text-white text-sm">Un escape del mundo</p>
                         </div>
                     </div>
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-switzerland)"></div>
-                        <div class="Card--info bg-white">
-                            <p class="text-terciary font-bold text-lg">Suiza</p>
-                            <p class="text-terciary text-sm">El corazón de los Alpes</p>
+                        <div class="Card--info bg-white dark:bg-gray-800">
+                            <p class="text-terciary font-bold text-lg dark:text-white">Suiza</p>
+                            <p class="text-terciary text-sm dark:text-white">El corazón de los Alpes</p>
                         </div>
                     </div>
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-seattle)"></div>
-                        <div class="Card--info bg-secondary">
+                        <div class="Card--info bg-secondary dark:bg-gray-700">
                             <p class="text-white font-bold text-lg">Seattle</p>
                             <p class="text-white text-sm">La ciudad esmeralda</p>
                         </div>
                     </div>
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-sydney) bg-center"></div>
-                        <div class="Card--info bg-white">
-                            <p class="text-terciary font-bold text-lg">Sydney</p>
-                            <p class="text-terciary text-sm">Conoce la famosísima Opera</p>
+                        <div class="Card--info bg-white dark:bg-gray-800">
+                            <p class="text-terciary font-bold text-lg dark:text-white">Sydney</p>
+                            <p class="text-terciary text-sm dark:text-white">Conoce la famosísima Opera</p>
                         </div>
                     </div>
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-europe) bg-center"></div>
-                        <div class="Card--info bg-secondary">
+                        <div class="Card--info bg-secondary dark:bg-gray-700">
                             <p class="text-white font-bold text-lg">Edimburgo</p>
                             <p class="text-white text-sm">Conoce los castillos medievales</p>
                         </div>
                     </div>
                     <div class="Card ">
                         <div class="Card--cover bg-(image:--background-iceland)"></div>
-                        <div class="Card--info bg-white">
-                            <p class="text-terciary font-bold text-lg">Islandia</p>
-                            <p class="text-terciary text-sm">La tierra del fuego y el hielo</p>
+                        <div class="Card--info bg-white dark:bg-gray-800">
+                            <p class="text-terciary font-bold text-lg dark:text-white">Islandia</p>
+                            <p class="text-terciary text-sm dark:text-white">La tierra del fuego y el hielo</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
 
             <!-- Rentas Destacadas -->
             <div class="px-6 h-full w-full" id="rentas_destacadas">
-                <p class="text-3xl text-primary font-semibold pb-6 mt-6 lg:text-4xl">Rentas destacadas</p>
+                <p class="text-3xl text-primary font-semibold pb-6 mt-6 lg:text-4xl dark:text-white">Estancias destacadas</p>
 
                 <!-- Grid en desktop -->
                 <div class="w-full h-full grid grid-cols-1 gap-6 lg:grid-cols-5 lg:grid-rows-6 lg:text-right">
@@ -176,22 +176,27 @@
             </div>
 
             <!-- FAQs -->
-            <div class="w-full h-auto" id="faqs">
-                <div class="w-full h-auto px-6 flex flex-col space-y-4">
-                    <p class="text-3xl text-primary font-semibold mt-6">FAQs</p>
+            <div class="w-full h-auto pb-9" id="faqs">
+                <div class="w-full h-auto px-6 flex flex-col space-y-9">
+                    <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQs</p>
 
                     <div>
-                        <p class="text-xl font-medium text-primary lg:text-2xl">Métodos de pago</p>
-                        <p class="text-md pt-2 lg:text-lg lg:w-3/4">
+                        <p class="text-xl font-medium text-primary lg:text-2xl dark:text-white">Métodos de pago</p>
+                        <p class="text-md pt-2 lg:text-lg lg:w-3/4 dark:text-gray-200">
                             Aceptamos una amplia variedad de métodos de pago, incluyendo VISA, MasterCard, American
                             Express, PayPal y Binance.
                             Todos los pagos se procesan de manera segura y protegida.
                         </p>
                     </div>
-
                     <div>
-                        <p class="text-xl font-medium text-primary lg:text-2xl">Estancias largas</p>
-                        <p class="text-md pt-2 lg:text-lg lg:w-3/4">
+                        <p class="text-xl font-medium text-primary lg:text-2xl dark:text-white">Mascotas</p>
+                        <p class="text-md pt-2 lg:text-lg lg:w-3/4 dark:text-gray-200">
+                            El tema de las mascotas dependerá directamente del anfitrión.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-primary lg:text-2xl dark:text-white">Estancias largas</p>
+                        <p class="text-md pt-2 lg:text-lg lg:w-3/4 dark:text-gray-200">
                             Si planeas una estadía prolongada, ofrecemos tarifas especiales y beneficios adicionales.
                             Las estancias de más de
                             una semana pueden incluir descuentos exclusivos, servicio de limpieza adicional y opciones
@@ -199,8 +204,8 @@
                         </p>
                     </div>
                     <div>
-                        <p class="text-xl font-medium text-primary lg:text-2xl">Política de cancelación</p>
-                        <p class="text-md pt-2 lg:text-lg lg:w-3/4">
+                        <p class="text-xl font-medium text-primary lg:text-2xl dark:text-white">Política de cancelación</p>
+                        <p class="text-md pt-2 lg:text-lg lg:w-3/4 dark:text-gray-200">
                             Entendemos que los planes pueden cambiar. Para estancias menores a una semana, puedes
                             cancelar sin penalización si nos notificas con al menos 3 días de anticipación.
                         </p>
@@ -211,7 +216,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 pb-16" id="sobre_nosotros">
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 pb-19 lg:pb-9" id="sobre_nosotros">
         <p class="text-xl text-primary font-semibold">Acerca De Nosotros</p>
         <p class="text-sm text-gray-400">Inversionistas</p>
         <p class="text-sm text-gray-400">Empleos</p>
@@ -221,7 +226,7 @@
     </footer>
 
     <!-- Tab Bar -->
-    <div class="w-full h-16 bg-white fixed left-0 bottom-0 flex justify-around items-center px-4 shadow-md text-gray-300 lg:hidden"
+    <div class="w-full h-16 bg-white fixed left-0 bottom-0 flex justify-around items-center px-4 shadow-md text-gray-300 lg:hidden dark:bg-gray-800"
         id="tab_bar">
         <a href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
@@ -252,14 +257,27 @@
                     clip-rule="evenodd" />
             </svg>
         </a>
-        <button>
+        <button id="dark-mode-toggle-mobile">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
                 <path fill-rule="evenodd"
                     d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
                     clip-rule="evenodd" />
             </svg>
-        </button>
+        </button>        
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggles = [document.getElementById("dark-mode-toggle-desktop"), document.getElementById("dark-mode-toggle-mobile")];
+    
+            const toggleDarkMode = () => {
+                document.documentElement.classList.toggle("dark");
+                localStorage.setItem("theme", document.documentElement.classList.contains("dark") ? "dark" : "light");
+            };
+    
+            localStorage.getItem("theme") === "dark" && document.documentElement.classList.add("dark");
+            toggles.forEach(btn => btn && btn.addEventListener("click", toggleDarkMode));
+        });
+    </script>
 </body>
 
 </html>
