@@ -301,52 +301,61 @@
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            /*** 🔹 1. Modo oscuro ***/
             const toggles = [
                 document.getElementById("dark-mode-toggle-desktop"),
                 document.getElementById("dark-mode-toggle-mobile"),
             ];
-
+    
             const toggleDarkMode = () => {
                 document.documentElement.classList.toggle("dark");
                 localStorage.setItem(
                     "theme",
-                    document.documentElement.classList.contains("dark")
-                        ? "dark"
-                        : "light"
+                    document.documentElement.classList.contains("dark") ? "dark" : "light"
                 );
             };
-
-            localStorage.getItem("theme") === "dark" &&
+    
+            if (localStorage.getItem("theme") === "dark") {
                 document.documentElement.classList.add("dark");
-            toggles.forEach(
-                (btn) => btn && btn.addEventListener("click", toggleDarkMode)
-            );
-        });
-        document.addEventListener("scroll", () => {
-            const navbar = document.getElementById("navbar");
-            if (window.scrollY > 50) {
-                navbar.classList.add("bg-white", "shadow-md", "dark:bg-gray-900");
-                navbar.classList.remove("bg-transparent");
-            } else {
-                navbar.classList.remove("bg-white", "shadow-md", "dark:bg-gray-900");
-                navbar.classList.add("bg-transparent");
             }
-        });
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll(".faq-question").forEach((question) => {
-                question.addEventListener("click", () => {
-                    const parent = question.parentElement;
-                    parent.classList.toggle("open");
-
-                    document.querySelectorAll(".faq-item").forEach((item) => {
-                        if (item !== parent) {
-                            item.classList.remove("open");
-                        }
-                    });
+    
+            toggles.forEach((btn) => btn?.addEventListener("click", toggleDarkMode));
+    
+            /*** 🔹 2. Navbar Sticky con Scroll Optimizado ***/
+            const navbar = document.getElementById("navbar");
+    
+            let lastScrollY = window.scrollY;
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("bg-white", "shadow-md", "dark:bg-gray-900");
+                    navbar.classList.remove("bg-transparent");
+                } else {
+                    navbar.classList.remove("bg-white", "shadow-md", "dark:bg-gray-900");
+                    navbar.classList.add("bg-transparent");
+                }
+                lastScrollY = window.scrollY;
+            };
+    
+            window.addEventListener("scroll", () => {
+                requestAnimationFrame(handleScroll);
+            });
+    
+            /*** 🔹 3. FAQs con Event Delegation ***/
+            document.getElementById("faqs").addEventListener("click", (e) => {
+                const question = e.target.closest(".faq-question");
+                if (!question) return;
+    
+                const parent = question.parentElement;
+                parent.classList.toggle("open");
+    
+                document.querySelectorAll(".faq-item").forEach((item) => {
+                    if (item !== parent) {
+                        item.classList.remove("open");
+                    }
                 });
             });
         });
-    </script>
+    </script>    
 </body>
 
 </html>
