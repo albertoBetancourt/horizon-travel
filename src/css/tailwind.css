@@ -39,19 +39,117 @@
         @apply w-full h-2/5 flex flex-col justify-center items-start gap-2 p-4 rounded-b-lg;
     }
 
-    .card-title{
+    .card-title {
         @apply font-semibold text-3xl px-8 pt-8 pb-2 text-white;
     }
 
     .bg-sydney {
         background-image: var(--background-sydney);
-        background-position: bottom; /* Asegura que la imagen se alinee en la parte inferior */
+        background-position: bottom;
+        /* Asegura que la imagen se alinee en la parte inferior */
         background-size: cover;
     }
 
     .bg-edinburgh {
         background-image: var(--background-europe);
-        background-position: bottom; /* Ajusta la imagen a la parte inferior */
+        background-position: bottom;
+        /* Ajusta la imagen a la parte inferior */
         background-size: cover;
+    }
+
+    .nav-link {
+        @apply relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-primary after:bottom-0 after:left-0 after:transition-all after:duration-300 hover:after:w-full;
+    }
+
+    .btn-explorar {
+        @apply w-36 py-1 px-2 rounded-full text-lg font-semibold text-primary bg-white shadow-sm transition-all duration-700 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:shadow-primary/50 relative overflow-hidden lg:w-42 lg:ml-24;
+    }
+
+    .btn-explorar::before {
+        content: "";
+        @apply absolute top-0 left-0 w-full h-full bg-white opacity-0 transition-all duration-700;
+        clip-path: circle(0% at 50% 50%);
+    }
+
+    .btn-explorar:hover::before {
+        @apply opacity-30;
+        clip-path: circle(100% at 50% 50%);
+    }
+
+    .img-hover-zoom {
+        @apply transition-transform duration-700 ease-in-out hover:scale-101 hover:shadow-xl;
+    }
+
+    .faq-item {
+        @apply border-b border-gray-300 dark:border-gray-600 pb-3;
+    }
+
+    .faq-question {
+        @apply w-full text-left text-lg font-medium text-primary dark:text-white py-3 cursor-pointer flex justify-between items-center transition-all duration-300;
+    }
+
+    .faq-question::after {
+        content: "▼";
+        @apply text-primary dark:text-white transition-transform duration-300;
+    }
+
+    .faq-answer {
+        @apply max-h-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-700 dark:text-gray-200;
+    }
+
+    .faq-item.open .faq-answer {
+        @apply max-h-40 pt-2;
+    }
+
+    .faq-item.open .faq-question::after {
+        transform: rotate(180deg);
+    }
+}
+
+@layer utilities {
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fadeIn {
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+    .typing-effect {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 0;
+        animation: typing 3s steps(40, end) forwards;
+    }
+
+    @keyframes fadeInScale {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    .animate-fadeInScale {
+        animation: fadeInScale 0.8s ease-out forwards;
     }
 }
