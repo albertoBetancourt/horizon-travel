@@ -2,13 +2,13 @@
   "name": "horizon-travel",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://albertoBetancourt.github.io/horizon-travel",
+  "homepage": "https://caavera.github.io/horizon-travel",
   "bugs": {
-    "url": "https://github.com/albertoBetancourt/horizon-travel/issues"
+    "url": "https://github.com/caavera/horizon-travel/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/albertoBetancourt/horizon-travel.git"
+    "url": "git+https://github.com/caavera/horizon-travel.git"
   },
   "license": "MIT",
   "author": "Carlos Vera <veracar111@gmail.com>",
